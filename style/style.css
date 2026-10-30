@@ -19,14 +19,19 @@ body {
     line-height: 1.5;
 }
 
+body::-webkit-scrollbar { /* esconde a scrollbar */
+  display: none;
+}
+
 a {
     text-decoration: none;
+    transition: all 0.5s ease;
 }
 
 a:hover {
     color: #ff7575;
-    text-decoration: underline;
 }
+
 
 /* ===== HEADER ===== */
 header {
@@ -34,6 +39,21 @@ header {
     background-color: var(--vermelho);
     color: white;
     text-align: center;
+}
+
+header img {
+    width: 15%;
+    border-radius: 50%;
+    margin-bottom: 1.2rem;
+    border: 3px solid white;
+    background-color: #3c3836;
+    object-fit: cover;
+    transition: all 0.3s ease;
+}
+
+header img:hover {
+    width: 16%;
+    transition: all 0.3s ease;
 }
 
 header h1 {
@@ -44,6 +64,7 @@ header p {
     font-size: 1rem;
     opacity: 0.9;
 }
+
 
 /* ===== NAV ===== */
 nav {
@@ -57,7 +78,7 @@ nav a {
     color: white;
     border-radius: 25px;
     margin: 0.8rem;
-    padding: 0.5rem 1rem;
+    padding: 0.8rem 1.2rem;
     font-weight: bold;
 }
 
@@ -73,6 +94,7 @@ main {
     padding: 2rem;
 }
 
+
 /* ===== SEÇÕES ===== */
 section {
     margin-bottom: 3rem;
@@ -84,6 +106,7 @@ section h2 {
     font-size: 2rem;
     margin-bottom: 1.2rem;
 }
+
 
 /* ===== GRID DE CARDS ===== */
 .container {
@@ -99,10 +122,11 @@ section h2 {
     border-radius: 6px;
     padding: 25px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
 }
 
 .card:hover {
-    transform: translateY(-5px);
+    transform: translateY(-8px);
 }
 
 .card h3 {
@@ -141,6 +165,7 @@ progress {
     width: 100%;
     height: 10px;
 }
+
 
 /* ===== FOOTER ===== */
 footer {
