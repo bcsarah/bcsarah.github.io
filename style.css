@@ -7,8 +7,6 @@
     --vermelho: #bd2121; 
     --vermelho-escuro: #9d0f0f;
     --amarelo: #fabd2f;
-    --laranja: ;
-    --preto: ;
 
     --cor-fundo-escuro: #1d2021;
     --cor-fundo: #2d2d2d;
@@ -49,7 +47,7 @@ header p {
 
 /* ===== NAV ===== */
 nav {
-    padding: 1rem;
+    padding: 1.2rem;
     background-color: var(--vermelho-escuro);
     text-align: center;
 }
